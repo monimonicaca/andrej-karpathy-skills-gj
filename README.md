@@ -1,7 +1,7 @@
-# Karpathy-Inspired Claude Code Guidelines
+﻿# Karpathy-Inspired Claude Code Guidelines
 
-基于已支持Claude code和cursor的andrej-karpathy-skills，添加对codex的支持，
-所有的行为准则都与andrej-karpathy-skills无异
+鍩轰簬宸叉敮鎸丆laude code鍜宑ursor鐨刟ndrej-karpathy-skills锛屾坊鍔犲codex鐨勬敮鎸侊紝
+鎵€鏈夌殑琛屼负鍑嗗垯閮戒笌andrej-karpathy-skills鏃犲紓
 
 ## The Problems
 
@@ -32,10 +32,10 @@ Four principles in one file that directly address these issues:
 
 LLMs often pick an interpretation silently and run with it. This principle forces explicit reasoning:
 
-- **State assumptions explicitly** — If uncertain, ask rather than guess
-- **Present multiple interpretations** — Don't pick silently when ambiguity exists
-- **Push back when warranted** — If a simpler approach exists, say so
-- **Stop when confused** — Name what's unclear and ask for clarification
+- **State assumptions explicitly** 鈥?If uncertain, ask rather than guess
+- **Present multiple interpretations** 鈥?Don't pick silently when ambiguity exists
+- **Push back when warranted** 鈥?If a simpler approach exists, say so
+- **Stop when confused** 鈥?Name what's unclear and ask for clarification
 
 ### 2. Simplicity First
 
@@ -60,7 +60,7 @@ When editing existing code:
 - Don't "improve" adjacent code, comments, or formatting
 - Don't refactor things that aren't broken
 - Match existing style, even if you'd do it differently
-- If you notice unrelated dead code, mention it — don't delete it
+- If you notice unrelated dead code, mention it 鈥?don't delete it
 
 When your changes create orphans:
 
@@ -84,9 +84,9 @@ Transform imperative tasks into verifiable goals:
 For multi-step tasks, state a brief plan:
 
 ```
-1. [Step] → verify: [check]
-2. [Step] → verify: [check]
-3. [Step] → verify: [check]
+1. [Step] 鈫?verify: [check]
+2. [Step] 鈫?verify: [check]
+3. [Step] 鈫?verify: [check]
 ```
 
 Strong success criteria let the LLM loop independently. Weak criteria ("make it work") require constant clarification.
@@ -120,6 +120,10 @@ echo "" >> CLAUDE.md
 curl https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md >> CLAUDE.md
 ```
 
+## Using with Codex
+
+This repo includes a Codex-compatible skill at [skills/karpathy-guidelines/](skills/karpathy-guidelines/). To use it in Codex, copy or symlink that folder into your Codex skills directory, typically ~/.codex/skills/karpathy-guidelines/.
+
 ## Using with Cursor
 
 This repository includes a committed Cursor project rule ([`.cursor/rules/karpathy-guidelines.mdc`](.cursor/rules/karpathy-guidelines.mdc)) so the same guidelines apply when you open the project in Cursor. See **[CURSOR.md](CURSOR.md)** for setup, using the rule in other projects, and how this relates to Claude Code.
@@ -136,10 +140,10 @@ The "Goal-Driven Execution" principle captures this: transform imperative instru
 
 These guidelines are working if you see:
 
-- **Fewer unnecessary changes in diffs** — Only requested changes appear
-- **Fewer rewrites due to overcomplication** — Code is simple the first time
-- **Clarifying questions come before implementation** — Not after mistakes
-- **Clean, minimal PRs** — No drive-by refactoring or "improvements"
+- **Fewer unnecessary changes in diffs** 鈥?Only requested changes appear
+- **Fewer rewrites due to overcomplication** 鈥?Code is simple the first time
+- **Clarifying questions come before implementation** 鈥?Not after mistakes
+- **Clean, minimal PRs** 鈥?No drive-by refactoring or "improvements"
 
 ## Customization
 
@@ -157,10 +161,11 @@ For project-specific rules, add sections like:
 
 ## Tradeoff Note
 
-These guidelines bias toward **caution over speed**. For trivial tasks (simple typo fixes, obvious one-liners), use judgment — not every change needs the full rigor.
+These guidelines bias toward **caution over speed**. For trivial tasks (simple typo fixes, obvious one-liners), use judgment 鈥?not every change needs the full rigor.
 
 The goal is reducing costly mistakes on non-trivial work, not slowing down simple tasks.
 
 ## License
 
 MIT
+
