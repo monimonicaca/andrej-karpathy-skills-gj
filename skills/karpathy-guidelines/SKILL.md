@@ -1,4 +1,4 @@
-﻿---
+---
 name: karpathy-guidelines
 description: Behavioral guidelines for Codex and other LLM coding agents to reduce common coding mistakes. Use when writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions, and define verifiable success criteria.
 ---
