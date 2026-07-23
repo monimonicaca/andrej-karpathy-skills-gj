@@ -18,5 +18,4 @@ Use this skill to keep coding changes minimal, explicit, and verifiable.
 
 - `references/principles.md` for the full principle write-up.
 - `references/examples.md` for concrete before/after examples.
-- `references/cursor.md` for Cursor-specific notes.
 - `README.md` for packaging and install guidance.
