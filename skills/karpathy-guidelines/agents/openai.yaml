@@ -1,7 +1,7 @@
 ﻿interface:
   display_name: "Karpathy Guidelines"
   short_description: "Explicit, minimal, testable coding guidance"
-  default_prompt: "Use $skill-name to keep changes minimal, surface assumptions, and verify success criteria."
+  default_prompt: "Use $karpathy-guidelines to keep changes minimal, surface assumptions, and verify success criteria."
 
 policy:
   allow_implicit_invocation: true
