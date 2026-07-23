@@ -18,4 +18,7 @@ Use this skill to keep coding changes minimal, explicit, and verifiable.
 
 - `references/principles.md` for the full principle write-up.
 - `references/examples.md` for concrete before/after examples.
+- `references/company.md` when the task must follow company-wide rules, standards, security, approval, or delivery constraints.
+- `references/personal.md` when the task should follow the maintainer's preferred workflow, habits, or local conventions.
+- If both apply, read `company.md` first, then `personal.md`, and let company rules take precedence when they conflict.
 - `README.md` for packaging and install guidance.
