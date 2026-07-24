@@ -1,6 +1,6 @@
 ---
 name: karpathy-guidelines
-description: Behavioral guidelines for Codex and other LLM coding agents to reduce common coding mistakes. Use when writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions, and define verifiable success criteria.
+description: Behavioral guidelines to reduce common coding mistakes. Use when writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions, and define verifiable success criteria.
 ---
 
 # Karpathy Guidelines
@@ -21,4 +21,4 @@ Use this skill to keep coding changes minimal, explicit, and verifiable.
 - `references/company.md` when the task must follow company-wide rules, standards, security, approval, or delivery constraints.
 - `references/personal.md` when the task should follow the maintainer's preferred workflow, habits, or local conventions.
 - If both apply, read `company.md` first, then `personal.md`, and let company rules take precedence when they conflict.
-- `README.md` for packaging and install guidance.
+
